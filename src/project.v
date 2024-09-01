@@ -77,13 +77,6 @@ assign cell_index = (pix_y[7:3] << 6) | pix_x[8:3];
 assign R = (video_active & frame_active) ? {board_state[cell_index] & icon_pixel, 1'b1} : 2'b00;
 assign G = (video_active & frame_active) ? {board_state[cell_index] & icon_pixel, 1'b1} : 2'b00;
 assign B = 2'b01;
-  
-// clock
-localparam CLOCK_FREQ = 24000000;
-
-// reset
-wire boot_reset;
-assign boot_reset = ~rst_n;
 
 
 // ----------------- SIMULATION PARAMS -------------------------
