@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This projects simulates [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in hardware on a small (32x16) grid with periodic boundary conditions.
+
+VGA output of the simulation state is also exposed on the bidirectional pins, that are all configured as outputs and wired to work with a [TinyVGA PMOD](https://github.com/mole99/tiny-vga).
 
 ## How to test
 
-Explain how to use your project
-
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+[TinyVGA PMOD](https://github.com/mole99/tiny-vga) for VGA output.
