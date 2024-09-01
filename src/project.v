@@ -17,7 +17,7 @@ module tt_um_ccattuto_conway (
 );
 
   // Unused outputs assigned to 0.
-  assign uo_out  = 0;
+  assign uio_out  = 0;
   assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
